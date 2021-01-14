@@ -1,0 +1,18 @@
+.generic-button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 22px 20px;
+  cursor: pointer;
+
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #712ae4;
+  border-width: 1px;
+  border-radius: 20px;
+}
+.generic-button:hover {
+  background-color: #712ae4;
+  border-color: transparent;
+}

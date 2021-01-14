@@ -1,0 +1,29 @@
+.neon-button {
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 4px 0px;
+  
+  letter-spacing: .3vh;
+}
+.neon-button:hover {
+  border-color: #ff2fff;
+  background-image: linear-gradient(rgb(233, 35, 233, 0) 60%,rgb(233, 35, 233, 0.75))
+}
+.neon-button-active {
+  text-decoration: none;
+  color: white;
+  margin: 0px 20px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 4px 0px;
+  border-color: #712ae4;
+}
