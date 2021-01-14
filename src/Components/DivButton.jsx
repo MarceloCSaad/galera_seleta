@@ -7,7 +7,7 @@ function DivButton(props) {
       <div className="div-button">
 
         <img className="div-button-image" src={props.src} alt="" />
-        <div className="floating-title">
+        <div className="floating-title"> {/* Using Pass through here */}
           {props.content}
         </div>
 
