@@ -1,11 +1,12 @@
 import React from "react";
 import './GenericButton.css';
+import { NavLink } from "react-router-dom";
 
 function GenericButton(props) {
   return (
-    <div className="generic-button">
+    <NavLink to={props.path} className="generic-button">
       {props.content}
-    </div>
+    </NavLink>
   );
 }
 

@@ -5,7 +5,11 @@
   justify-content: center;
   padding: 20px 20px 22px 20px;
   cursor: pointer;
-
+  text-decoration: none;
+  
+  font-weight: 500;
+  color: #712ae4;
+  
   box-sizing: border-box;
   border-style: solid;
   border-color: #712ae4;
@@ -15,4 +19,6 @@
 .generic-button:hover {
   background-color: #712ae4;
   border-color: transparent;
+  color: black;
+  font-weight: 600;
 }

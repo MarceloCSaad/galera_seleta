@@ -1,6 +1,4 @@
 import React from "react";
-import DivButton from "./Components/DivButton";
-import GenericButton from "./Components/GenericButton";
 import NeonButton from "./Components/NeonButton";
 import Home from "./Components/Home/Home";
 import News from "./Components/News/News";
@@ -12,12 +10,10 @@ import images from "./assets/images";
 import './App.css';
 
 
-
 function App() {
   return (
     <div id="app-container">
       <div id="content-area">
-
         <div className="app-header">
           <h1>Galera Seleta</h1>
         </div>
@@ -29,21 +25,20 @@ function App() {
           <NeonButton content="PAPO RETO" path="/PapoReto"/>
         </div>
 
-        <div className="app-content" > {/*CONTENT GOES HERE*/}
+        <div className="app-content" >
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/News" component={News} />
-            <Route exact path="/Games" component={Games} />
+            <Route path="/Games" component={Games} />
             <Route exact path="/PapoReto" component={PapoReto} />
             <Route component={Home} />
           </Switch>
-        </div>
-      
+        </div>    
       </div>
 
 
       <footer id="app-footer">
-        <img className="grid-snap-bottom" src={images[1]} alt="" />
+        <img className="grid-snap-bottom" src={images.gridlines} alt="" />
         <div>
           <h2>galere na rede</h2>
           <p>Quer matutar um papo solerte pra nossa galere?</p>

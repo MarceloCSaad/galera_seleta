@@ -1,18 +1,39 @@
 .news-box-container {
-  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-items: center;
+
+  border-bottom: 1px solid #712ae4;
+  padding-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 .news-box-container h1 {
   text-shadow:  0 0 10px #ff4da6, 0 0 30px #712ae4;
-  max-width: 1000px;
   margin-bottom: 50px;
 }
-.news-box-container p {
-  max-width: 1000px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #712ae4;
+.news-box-container h3 {
+  font-size: larger;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.news-box-container h4 {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0px;
+}
+.news-box-container h5 {
+  font-style: italic;
+  font-size:small;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.news-info {
+  width: 100%;
+  display: block;
+  text-align: left;
 }

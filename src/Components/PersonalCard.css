@@ -1,0 +1,63 @@
+.personal-card-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+
+  box-sizing: border-box;
+  border-style: solid;
+  border-image-source: linear-gradient(to bottom, #712ae4, #d53a9d);
+  border-image-slice: 1;
+  border-color: #712ae4;
+  border-width: 1px;
+}
+.personal-card-container p {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 15px
+}
+.personal-card-container h3 {
+  font-size: larger;
+  font-weight: 800;
+  margin: 10px;
+  padding-top: 10px;
+}
+.personal-card-container h5 {
+  font-size:small;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.personal-card-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  max-width: 100%;
+  overflow: hidden;
+  border-color: #712ae4;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+.personal-card-avatar {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.personal-card-list {
+  width: 70%;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 0px;
+  margin: 10px;
+}
+.personal-card-list img {
+  width: 40px;
+  height: 40px;
+}

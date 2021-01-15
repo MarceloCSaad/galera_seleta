@@ -1,15 +1,20 @@
 import React from "react";
 import images from "../../assets/images";
+import GenericButton from "../GenericButton";
 import './NewsBox.css';
 
-function NewsBox() {
+function NewsBox(props) {
   return (
     <>
       <div className="news-box-container">
-          <h1>Latest Update</h1>
-          <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        <h3>{props.headline}</h3>
+        <p>{props.summary}</p>
+        <div className="news-info">
+          <h4>{props.author}</h4>
+          <h5>{props.date}</h5>
+        </div>
+
+        <GenericButton content="ler mais" path="/News" />
           
       </div>
     </>
