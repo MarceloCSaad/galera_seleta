@@ -12,6 +12,7 @@ pipeline {
     
             steps {
                 echo 'building the application...'
+                nodejs('Node-15.7.0')
             }
         }
 
