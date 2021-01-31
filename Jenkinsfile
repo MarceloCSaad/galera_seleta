@@ -8,6 +8,13 @@ pipeline {
 
     stages {
        
+        stage("clone-repo") {
+            
+            steps {
+                git url: "https://github.com/MarceloCSaad/galera_seleta.git"
+            }
+        }
+
         stage("build") {
     
             steps {
