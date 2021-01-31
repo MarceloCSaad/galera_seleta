@@ -19,9 +19,11 @@ pipeline {
     
             steps {
                 echo 'building the application...'
-                // nodejs('Node-15.7.0') {
-                //     sh 'yarn run build'
-                // }
+                nodejs('Node-15.7.0') {
+                    sh 'cd /var/jenkins_home/workspace/galere-seleta_master'
+                    sh 'yarn install'
+                    sh 'yarn run build'
+                }
             }
         }
 
