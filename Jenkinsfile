@@ -3,7 +3,7 @@ pipeline {
     agent any
     
     parameters {
-        booleanParams(name: 'executeTests', defaultValue: true, description: 'Unity and integration tests execution')
+        booleanParam(name: 'executeTests', defaultValue: true, description: 'Unity and integration tests execution')
     }
 
     stages {
