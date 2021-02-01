@@ -20,7 +20,8 @@ pipeline {
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 echo "working dir = ${env.WORKSPACE}"
-                // sh "cd ${env.WORKSPACE}/galere-seleta_master"
+                sh "cd ${env.WORKSPACE}"
+                sh 'ls -la'
                 // nodejs('Node-15.7.0') {
                 //     sh 'npm install'
                 //     sh 'npm run build'
