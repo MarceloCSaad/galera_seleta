@@ -20,8 +20,10 @@ pipeline {
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 echo "working dir = ${env.WORKSPACE}"
+                echo 'new test'
                 sh "cd ${env.WORKSPACE}"
                 sh 'ls -la'
+            
                 // nodejs('Node-15.7.0') {
                 //     sh 'npm install'
                 //     sh 'npm run build'
