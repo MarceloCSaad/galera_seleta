@@ -19,7 +19,7 @@ pipeline {
     
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                sh "working dir = ${env.WORKSPACE}"
+                echo "working dir = ${env.WORKSPACE}"
                 // sh "cd ${env.WORKSPACE}/galere-seleta_master"
                 // nodejs('Node-15.7.0') {
                 //     sh 'npm install'
@@ -51,9 +51,9 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            emailext body: 'A Test Email', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
-        }
-    }
+    // post {
+    //     always {
+    //         emailext body: 'JENKINS HAVE RUN A JOB =)', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+    //     }
+    // }
 }
