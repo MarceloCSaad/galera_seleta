@@ -46,7 +46,7 @@ pipeline {
             }
             steps {
                 echo "Deploying application job ${env.BUILD_ID} in host!"
-                sh "cat ${env.WORKSPACE}/build/index.html"
+                sh "echo Worked! > ${env.WORKSPACE}/worked.txt"
             }
         }
     }
