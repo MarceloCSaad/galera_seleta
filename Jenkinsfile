@@ -18,12 +18,13 @@ pipeline {
         stage("build") {
     
             steps {
-                echo 'building the application...'
-                nodejs('Node-15.7.0') {
-                    sh 'cd /var/jenkins_home/workspace/galere-seleta_master'
-                    sh 'npm install'
-                    sh 'npm run build'
-                }
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                sh "working dir = ${env.WORKSPACE}"
+                // sh "cd ${env.WORKSPACE}/galere-seleta_master"
+                // nodejs('Node-15.7.0') {
+                //     sh 'npm install'
+                //     sh 'npm run build'
+                // }
             }
         }
 
