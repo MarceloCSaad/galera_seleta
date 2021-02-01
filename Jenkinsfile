@@ -46,7 +46,7 @@ pipeline {
             }
             steps {
                 echo "Deploying application job ${env.BUILD_ID} in host!"
-                sh 'ssh -p 669 sandesvitor@galere.se cp -fR /var/lib/docker/volumes/jenkins_home/_data/workspace/galere-seleta_master/build/* /var/www/galere'
+                sh "cat ${env.WORKSPACE}/build/index.html"
             }
         }
     }
