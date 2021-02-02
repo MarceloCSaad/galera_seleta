@@ -19,7 +19,7 @@ function App() {
       <div id="content-area">
 
         <div className="app-header">
-          <h1>Galere Seleta!</h1>
+          <h1>Galere Seleta</h1>
         </div>
 
         <div className="app-nav-bar">
@@ -47,6 +47,7 @@ function App() {
         <div>
           <h2>galere na rede</h2>
           <p>Quer matutar um papo solerte pra nossa galere?</p>
+          <p>(O Max não curte mas você pode curtir!)</p>
           <ul className="contact-list">
             <li><a href="mailto:#">email</a></li>
             <li><a href="#">discord</a></li>
