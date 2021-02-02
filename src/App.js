@@ -19,7 +19,7 @@ function App() {
       <div id="content-area">
 
         <div className="app-header">
-          <h1>Galera Seleta</h1>
+          <h1>Galere Seleta</h1>
         </div>
 
         <div className="app-nav-bar">

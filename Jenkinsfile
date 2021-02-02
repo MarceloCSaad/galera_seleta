@@ -46,7 +46,7 @@ pipeline {
             }
             steps {
                 echo "Deploying application job ${env.BUILD_ID} in host!"
-                sh "echo Worked! > ${env.WORKSPACE}/worked.txt"
+                sh "mv ${env.WORKSPACE}/build/ /var/jenkins_home/build/"
             }
         }
     }
