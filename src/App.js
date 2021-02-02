@@ -6,7 +6,7 @@ import Home from "./Components/Home/Home";
 import News from "./Components/News/News";
 import Games from "./Components/Games/Games";
 import PapoReto from "./Components/PapoReto/PapoReto";
-import {BrowserRouter, NavLink, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, NavLink, Switch, Route, Redirect} from 'react-router-dom';
 
 import images from "./assets/images";
 import './App.css';
@@ -32,10 +32,10 @@ function App() {
         <div className="app-content" > {/*CONTENT GOES HERE*/}
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/News" component={News} />
-            <Route exact path="/Games" component={Games} />
-            <Route exact path="/PapoReto" component={PapoReto} />
-            <Route component={Home} />
+            <Route path="/News" component={News} />
+            <Route path="/Games" component={Games} />
+            <Route path="/PapoReto" component={PapoReto} />
+            <Redirect from="*" to="/" />
           </Switch>
         </div>
       
