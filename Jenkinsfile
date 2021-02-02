@@ -48,6 +48,7 @@ pipeline {
                 echo "Deploying application job ${env.BUILD_ID} in host!"
                 sh "rm -rf /var/jenkins_home/build/*"
                 sh "cp -fR ${env.WORKSPACE}/build/* /var/jenkins_home/build/"
+                sh "cp ${env.WORKSPACE}/.htaccess /var/jenkins_home/build/"
             }
         }
     }

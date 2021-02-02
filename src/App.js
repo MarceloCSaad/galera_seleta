@@ -54,9 +54,9 @@ function App() {
           </ul>
         </div>
 
-        {/*<div className="footer-bottom">
+        <div className="footer-bottom">
             Design por Marcelo Saad
-        </div>*/}
+        </div>
       </footer>
     </div>
   );
