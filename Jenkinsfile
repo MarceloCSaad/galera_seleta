@@ -46,7 +46,8 @@ pipeline {
             }
             steps {
                 echo "Deploying application job ${env.BUILD_ID} in host!"
-                sh "mv ${env.WORKSPACE}/build/ /var/jenkins_home/build/"
+                sh "rm -rf /var/jenkins_home/build/*"
+                sh "cp -fR ${env.WORKSPACE}/build/* /var/jenkins_home/build/"
             }
         }
     }
